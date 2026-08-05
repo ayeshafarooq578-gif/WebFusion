@@ -6,33 +6,28 @@ import BackgroundEffects from "./BackgroundEffects";
 
 const Hero = () => {
   return (
-    <section
-    id="home"
-    data-aos="fade-up"
-     className="relative overflow-hidden pt-32 pb-24">
+    <section className="relative overflow-hidden pt-24 md:pt-28 lg:pt-32 pb-16 md:pb-20 lg:pb-24">
 
       <BackgroundEffects />
 
-      {/* Increased container width */}
-      <Container className="max-w-[1500px]">
-
+      <Container>
         <div
-  className="
-    grid
-    lg:grid-cols-2
-    grid-cols-1
-    items-center
-    gap-16
-    lg:gap-20
-  "
->
-  <HeroContent />
+          className="
+            grid
+            grid-cols-1
+            lg:grid-cols-2
+            items-center
+            gap-12
+            lg:gap-16
+            xl:gap-20
+          "
+        >
+          {/* Text */}
+          <HeroContent />
 
-  <HeroVisual />
-</div>
-
-        
-
+          {/* Laptop */}
+          <HeroVisual />
+        </div>
       </Container>
 
     </section>

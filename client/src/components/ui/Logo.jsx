@@ -5,23 +5,23 @@ const Logo = () => {
   return (
     <Link
       to="/"
-      className="flex items-center gap-3 group"
+      className="flex items-center gap-2 md:gap-3 shrink-0"
     >
       <img
         src={logo}
         alt="WebFusion Logo"
-        className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-105"
+        className="w-10 h-10 md:w-12 md:h-12 object-contain"
       />
 
-      <div className="hidden sm:block">
+      <div className="leading-tight">
         <h1
-          className="text-xl font-bold text-white"
+          className="text-lg md:text-2xl font-bold text-white whitespace-nowrap"
           style={{ fontFamily: "Sora" }}
         >
           WebFusion
         </h1>
 
-        <p className="text-xs tracking-[3px] uppercase text-slate-400">
+        <p className="text-[10px] md:text-xs tracking-[2px] md:tracking-[3px] uppercase text-slate-400 whitespace-nowrap">
           Web Development Agency
         </p>
       </div>

@@ -43,9 +43,9 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden text-white"
-          >
+  onClick={() => setMenuOpen(!menuOpen)}
+  className="lg:hidden text-white flex-shrink-0"
+>
             {menuOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
 
