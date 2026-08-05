@@ -7,9 +7,9 @@ const Laptop = () => {
       alt="Laptop"
       className="
         w-full
-        max-w-[260px]
-        sm:max-w-[360px]
-        md:max-w-[480px]
+        max-w-[340px]
+        sm:max-w-[430px]
+        md:max-w-[520px]
         lg:max-w-[650px]
         h-auto
         object-contain

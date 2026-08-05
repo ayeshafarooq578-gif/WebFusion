@@ -26,85 +26,35 @@ const HeroVisual = () => {
 
       {/* Laptop */}
       <div
-        className="
-          relative
-          z-20
-          scale-[0.72]
-          sm:scale-[0.82]
-          md:scale-[0.95]
-          lg:scale-[1.10]
-          xl:scale-[1.28]
-          2xl:scale-[1.35]
-          lg:-translate-x-8
-          xl:-translate-x-12
-        "
-      >
-        <Laptop />
-      </div>
+  className="
+    relative
+    z-20
+    w-full
+    flex
+    justify-center
+    lg:-translate-x-8
+    xl:-translate-x-12
+  "
+>
+  <Laptop />
+</div>
 
       {/* React */}
-      <div
-        className="
-          absolute
-          top-2
-          left-2
-          sm:top-6
-          sm:left-6
-          md:top-10
-          md:left-10
-          z-30
-        "
-      >
-        <ReactIcon />
-      </div>
+      <div className="absolute top-10 left-10 scale-75 sm:scale-90 lg:scale-100">
+  <ReactIcon />
+</div>
 
-      {/* Node */}
-      <div
-        className="
-          absolute
-          top-4
-          right-2
-          sm:top-8
-          sm:right-6
-          md:top-10
-          md:right-8
-          z-30
-        "
-      >
-        <NodeIcon />
-      </div>
+<div className="absolute top-10 right-10 scale-75 sm:scale-90 lg:scale-100">
+  <NodeIcon />
+</div>
 
-      {/* Mongo */}
-      <div
-        className="
-          absolute
-          bottom-12
-          left-4
-          sm:bottom-20
-          sm:left-8
-          md:bottom-24
-          md:left-12
-          z-30
-        "
-      >
-        <MongoIcon />
-      </div>
+<div className="absolute bottom-20 left-10 scale-75 sm:scale-90 lg:scale-100">
+  <MongoIcon />
+</div>
 
-      {/* Tailwind */}
-      <div
-        className="
-          absolute
-          bottom-4
-          right-2
-          sm:bottom-8
-          sm:right-6
-          md:bottom-10
-          md:right-10
-          z-30
-        "
-      >
-        <TailwindIcon />
-      </div>
+<div className="absolute bottom-10 right-10 scale-75 sm:scale-90 lg:scale-100">
+  <TailwindIcon />
+</div>
     </div>
   );
 };
